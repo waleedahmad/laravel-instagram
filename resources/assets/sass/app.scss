@@ -1,0 +1,41 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+.app{
+  height: 100%;
+  padding-bottom: 50px;
+
+  .profile-header{
+    display :block;
+    height: 150px;
+    clear: both;
+    .picture, .info{
+      display : inline-block;
+    }
+  }
+
+  .posts{
+    margin: 50px auto;
+    float: none;
+
+    .post{
+      margin-top: 10px;
+
+      .image img{
+        width: 100%;
+      }
+    }
+  }
+}
