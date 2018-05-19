@@ -2,7 +2,7 @@
 
 Auth::routes();
 
-Route::group(['middleware' => ['auth']], function(){
+Route::group(['middleware' => ['auth', 'instagram']], function(){
 
     Route::get('/', 'AppController@index');
 

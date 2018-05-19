@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container app">
-        @if($user)
+        @if(Auth::user()->instagram)
             <div class="profile-header">
                 <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 picture">
                     <img src="{{$user->profile_picture}}" alt="...">
@@ -20,7 +20,7 @@
             </div>
 
             <div class="posts col-xs-12 col-sm-12 col-md-8 col-lg-6">
-                @if(count($posts))
+                @if($posts)
                     @foreach($posts as $post)
                         <div class="post">
                             <div class="caption">
@@ -36,6 +36,8 @@
                             @endif
                         </div>
                     @endforeach
+                @else
+                    No Instagram posts
                 @endif
             </div>
         @else
