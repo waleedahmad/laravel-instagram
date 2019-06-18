@@ -164,7 +164,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         \SocialiteProviders\Manager\ServiceProvider::class,
-        \App\Providers\InstagramSerivceProvider::class,
+        \App\Providers\InstagramServiceProvider::class,
         /*
          * Package Service Providers...
          */

@@ -5,7 +5,7 @@ namespace App\Providers;
 use App\Classes\InstagramAPI;
 use Illuminate\Support\ServiceProvider;
 
-class InstagramSerivceProvider extends ServiceProvider
+class InstagramServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
