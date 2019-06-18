@@ -24,7 +24,7 @@
                     @foreach($posts as $post)
                         <div class="post">
                             <div class="caption">
-                                <h4>{{$post->caption->text}}</h4>
+                                <h4>{{isset($post->caption->text) ? $post->caption->text : ''}}</h4>
                             </div>
 
                             @if($post->type === 'image')
